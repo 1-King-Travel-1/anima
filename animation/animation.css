@@ -1,0 +1,76 @@
+.cont{
+	background-image: linear-gradient(25deg,#FFE400,#00FFBD);
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	overflow: hidden;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.cont-h{
+	font-size: 100px;
+	margin-bottom: 50px;
+/*	transform: translate(1000px,150px);*/
+/*	transform: scale(2);*/
+/*transform: scale(1.5) skew(30deg) rotate(30deg) translateY(20px);*/
+transform: translateY(150px);
+}
+.cont-a{
+	display: inline-block;
+	transform: translateY(150px);
+	transition: 2s;
+	animation-name: polsar;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+.cont-a:hover{
+	transform: scale(2) translateY(75px);
+	transition: 1s;
+}
+@keyframes polsar{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.2;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes jamp{
+	0%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(20px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+.my{
+	display: inline-block;
+	animation-name: jamp;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+.games{
+	display: inline-block;
+	animation-name: jamp;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	/*animation-delay: 0.5s;*/
+}
+.hub{
+	display: inline-block;
+	animation-name: jamp;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	/*animation-delay: 1s;*/
+}
